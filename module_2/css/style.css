@@ -1,1 +1,102 @@
 
+/*font*/
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@400;700&display=swap);
+
+/********** Base styles **********/
+  /* reset default styles  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 175%;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  section {
+    margin: 1% 1%;
+    border: 1px solid black;
+    height: 150px;
+    position: relative;
+    color: white;
+  }
+  
+  #chicken-section{
+    background-color: #8f6b09;
+  }
+
+  #beef-section{
+    background-color: #4e0011;
+  }
+
+  #sushi-section{
+    background-color: #a34061;
+  }
+
+  section > h1 {
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 125%;
+    color:rgb(29, 24, 24);
+  }
+
+  #chicken-header{
+    color:rgb(29, 24, 24);
+    background-color: #83530a;
+  }
+
+  #beef-header{
+    background-color: #811c32;
+  }
+
+  #sushi-header{
+    background-color: #bb6280;
+  }
+  
+  section > p {
+    padding: 25px;
+    padding-top: 40px;
+    text-align: justify;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+    /* Simple Responsive Framework. */
+
+  /********** desktop view**********/
+  @media (min-width: 992px) {
+    .desktop {
+      width: 31.33%;
+      float: left;
+    }
+  }
+  
+  /********** tablet view **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .tablet {
+      width: 48%;
+      float: left;
+    }
+
+    #sushi-section {
+      width: 98%;
+    }
+  }
+  
+  /********** mobile view **********/
+  @media (max-width: 767px){
+    .mobile {
+      float: left;
+      width: 98%;
+    }
+  }
+  
+  
+  
